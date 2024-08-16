@@ -1,0 +1,184 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #000 !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        margin: 0 !important;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* Hero Styles */
+#hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#heroCarousel {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+/* Details Styles */
+#details {
+    background-color: #f8f9fa;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("");
+}
+/* Cards Styles */
+#announcements .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#announcements .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#announcements .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#announcements .card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+/* Activity Areas Styles */
+#activity-areas .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    border-radius: 10px;
+}
+
+#activity-areas .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#activity-areas .card-body {
+    padding: 1.5rem;
+}
+
+#activity-areas .card-title {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#activity-areas ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+#activity-areas ul li:last-child {
+    margin-bottom: 0;
+}
+/* Gallery Styles */
+#gallery img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container > div {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .gallery-container > div {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container > div {
+        flex: 0 0 100%;
+    }
+}
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
